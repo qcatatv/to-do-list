@@ -1,0 +1,209 @@
+body {
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #888;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.task-item {
+    margin-bottom: 10px;
+}
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.filter-button {
+    margin-right: 10px;
+}
+
+
+.todolist{
+    background-color: #252A34;
+    border-radius: 10px;
+    margin-top: 20vh;
+    padding: 50px;
+}
+
+.title-todo{
+  font-family: 'Poppins';
+  color: white;
+  margin-bottom: 8vh;
+}
+
+/*Button*/
+
+.button-group{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 0fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 0px;
+
+}
+
+.check{
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #F9F7F7;
+}
+
+.date{
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+
+input{
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+button {
+    font-family: 'Poppins';
+    font-weight: 600;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: #0077ff;
+    border: transparent;
+    border-radius: 6px;
+    position: relative;
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+  }
+  
+  button::before {
+    position: absolute;
+    content: "";
+    background: #0077ff;
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: white;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+  }
+  
+  button:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  /*Input*/
+
+.input{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 30px;
+}
+
+  .input-task {
+    background-color: transparent;
+    border: 0px solid;
+    border-bottom: 2px #fff solid;
+    padding: 15px 0;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #fff;
+  }
+
+  input::placeholder{
+    color: #F9F7F7;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Poppins';
+  }
+  input:focus {
+    outline: none;
+}
+
+.input-date{
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
+    border: transparent;
+    border-radius: 15px;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #fff;
+    outline: none;
+    
+}
+
+.input-time{
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
+    border: transparent;
+    border-radius: 15px;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #fff;
+    outline: none;
+}
+
+.product-of{
+  margin-top: 5vh;
+}
+
+.product-of h1{
+  font-size: 18px;
+  color: #F9F7F7;
+}
+
+.qdev{
+  color: black;
+  background-color: #FCE803;
+  padding: 0px 5px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 19px -2px #FCE803;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+.checkbox{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  transition: all 0.7s;
+  margin-right: 1vh;
+  cursor: pointer;
+  margin-bottom: -50px ;
+}
