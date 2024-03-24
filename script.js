@@ -89,3 +89,13 @@ function clearCompleted() {
     tasks = tasks.filter(task => !task.completed);
     renderTasks();
 }
+
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".page-loading");
+    setTimeout(function() {
+        loader.style.opacity = "0";
+        setTimeout(function() {
+            loader.style.display = "none"; 
+        }, 500); 
+    }, 1000); 
+});
